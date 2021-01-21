@@ -1,0 +1,240 @@
+.contentRight {
+	width: 100%;
+	display: none;
+
+	&.active {
+		display: block;
+	}
+
+	.back880 {
+		display: none;
+		align-items: center;
+		margin-top: 20px;
+		margin-bottom: 32px;
+		padding-left: 8px;
+		cursor: pointer;
+		@include _880 {
+			display: flex;
+		}
+		.item880 {
+			background: $white;
+			border: 1px solid #c7c7c7;
+			box-sizing: border-box;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			margin-right: 12px;
+
+			a {
+				display: block;
+				width: 8px;
+				height: 8px;
+				border-bottom: 2px solid #1c1e20;
+				border-left: 2px solid #1c1e20;
+				transform: rotate(45deg);
+				margin-left: 40%;
+			}
+		}
+
+		p {
+			font-weight: bold;
+			font-size: 15px;
+			line-height: 130%;
+			color: $dark;
+		}
+	}
+	.breadcrumbs {
+		margin-top: 35px;
+		margin-bottom: 8px;
+		padding-left: 8px;
+		a {
+			font-weight: normal;
+			font-size: 13px;
+			line-height: 130%;
+			color: $dark;
+			&:hover {
+				color: $blue;
+			}
+		}
+		span {
+			margin-top: 35px;
+			font-weight: normal;
+			font-size: 13px;
+			line-height: 130%;
+			color: $dark;
+		}
+	}
+	.title {
+		margin-bottom: 55px;
+		padding-left: 8px;
+
+		@include _880 {
+			margin-bottom: 35px;
+		}
+		h1 {
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 130%;
+			color: $dark;
+			margin: 0;
+		}
+	}
+	.main {
+		background: $white;
+		width: 100%;
+		border: 1px solid #c7c7c7;
+		box-sizing: border-box;
+		border-radius: 20px;
+		padding: 20px 20px;
+
+		.main_title {
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 130%;
+			color: $dark;
+			margin-bottom: 12px;
+		}
+
+		.main_subtitle {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 150%;
+			color: $grey;
+			margin-bottom: 36px;
+		}
+
+		.main_content {
+			display: flex;
+			justify-content: space-between;
+			@include _580 {
+				flex-direction: column;
+			}
+
+			.content_left {
+				flex: 0 0 40%;
+				@include _580 {
+					flex: 0 0 100%;
+					margin-bottom: 17px;
+				}
+				a {
+					font-style: normal;
+					font-weight: 500;
+					font-size: 11px;
+					line-height: 130%;
+					text-transform: uppercase;
+					color: $dark;
+					&:hover {
+						color: $blue;
+					}
+				}
+			}
+			.content_right {
+				flex: 0 0 60%;
+				@include _580 {
+					flex: 0 0 100%;
+				}
+				p {
+					margin: 0;
+					margin-bottom: 8px;
+					&.sub_label {
+						margin-left: 36px;
+						margin-bottom: 24px;
+						font-style: normal;
+						font-weight: 500;
+						font-size: 15px;
+						font-feature-settings: "pnum" on, "lnum" on;
+						line-height: 150%;
+						color: $grey;
+
+						@include _580 {
+							font-size: 13px;
+							margin-left: 23px;
+						}
+					}
+
+					&.password {
+						display: flex;
+						flex-direction: column;
+						margin-left: 36px;
+						display: none;
+						&.active {
+							display: flex;
+						}
+						label {
+							font-style: normal;
+							font-weight: normal;
+							font-size: 13px;
+							line-height: 130%;
+							color: $dark;
+							margin-bottom: 8px;
+						}
+						input {
+							border: none;
+							outline: none;
+							border-bottom: 1px solid #c7c7c7;
+							order: 4;
+							align-self: stretch;
+							padding: 8px 0px;
+							font-style: normal;
+							font-weight: bold;
+							font-size: 15px;
+							line-height: 130%;
+							color: $dark;
+							order: 2;
+						}
+					}
+				}
+			}
+		}
+
+		.btn {
+			text-align: right;
+			margin-top: 16px;
+
+			.btn_close {
+				display: inline-block;
+				cursor: pointer;
+				align-items: center;
+				padding: 10px 16px;
+				width: 105px;
+				height: 40px;
+				background: $white;
+				border: 1px solid #c7c7c7;
+				box-sizing: border-box;
+				border-radius: 20px;
+				font-weight: bold;
+				font-size: 15px;
+				line-height: 120%;
+				color: #1c1e20;
+
+				&:hover {
+					opacity: 0.8;
+				}
+			}
+			.btn_save {
+				display: inline-block;
+				cursor: pointer;
+				align-items: center;
+				padding: 10px 16px;
+				width: 112px;
+				height: 40px;
+				background: $blue;
+				border: 1px solid #c7c7c7;
+				box-sizing: border-box;
+				border-radius: 20px;
+				font-weight: bold;
+				font-size: 15px;
+				line-height: 120%;
+				color: $white;
+				margin-left: 12px;
+
+				&:hover {
+					opacity: 0.8;
+				}
+			}
+		}
+	}
+}

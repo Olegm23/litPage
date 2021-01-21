@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap" rel="stylesheet">
+	<title>LitPage</title>
+</head>
+
+<body>
+
+	<section class="header">
+		<div class="wr">
+			<div class="logo">
+				<a href="#">lite.page</a>
+			</div>
+			<div id="nav" class="nav">
+				<ul>
+					<li><a href="#">CRM</a></li>
+					<li><a href="#">Мои сайты</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Тарифы</a></li>
+					<li><a href="#">Блог</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Помощь</a></li>
+					<li>
+						<a id="profile" href="#"><img src="./assets/img/profile.png" alt="profile"></a>
+
+						<div id="sub_img" class="sub_img">
+							<ul>
+								<li><a href="#">Антон Городецкий</a></li>
+								<li><a href="#">Выйти</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="burger">
+				<a class="menu-button" id="menuButton">
+					<span class="burger-icon"></span>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="wr">
+			<div id="left" class="contentLeft">
+				<div id="back" class="back">
+					<div class="item"><a href="#"></a></div>
+					<p>Назад</p>
+				</div>
+				<div class="menuLk">
+					<ul>
+						<li><a class="item_menu" href="#">Доступ к сайту</a></li>
+						<li><a class="item_menu" href="#">Доступ к сайту</a></li>
+						<li><a class="item_menu" href="#">Доступ к сайту</a></li>
+						<li><a class="item_menu active" href="#">Доступ к сайту</a></li>
+						<li><a class="item_menu" href="#">Доступ к сайту</a></li>
+						<li><a class="item_menu" href="#">Доступ к сайту</a></li>
+						<li><a class="item_menu" href="#">Доступ к сайту</a></li>
+						<li><a class="item_menu" href="#">Доступ к сайту</a></li>
+						<li><a class="item_menu" href="#">Доступ к сайту</a></li>
+						<li><a class="item_menu" href="#">Доступ к сайту</a></li>
+						<li><a class="item_menu" href="#">Доступ к сайту</a></li>
+						<li><a class="item_menu" href="#">Доступ к сайту</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="right" class="contentRight active">
+				<div id="back880" class="back880">
+					<div class="item880"><a href="#"></a></div>
+					<p>Назад</p>
+				</div>
+				<div class="breadcrumbs">
+					<a href="#">Главная</a> <span> /</span> <a href="#"> Настройки сайта </a> <span>/</span><a href="#">
+						Доступ к сайту</a>
+				</div>
+				<div class="title">
+					<h1>Доступ к сайту</h1>
+				</div>
+				<div class="main">
+					<div class="main_title">Настройка доступа к сайту</div>
+					<div class="main_subtitle">Контролируйте, кому доступен ваш сайт</div>
+					<div class="main_content">
+						<div class="content_left">
+							<a href="#">Интернет сайт</a>
+						</div>
+						<form class="content_right">
+							<p class="ower">
+								<input id="test1" name="radio-group" type="radio">
+								<label for="test1">Опубликовать сайт</label>
+							</p>
+							<p class="sub_label">Доступно при
+								оплаченном тарифном плане и купленном домене</p>
+							<p id="ps_hid">
+								<input id="test2" name="radio-group" type="radio">
+								<label for="test2">Сайт защищен паролем</label>
+							</p>
+							<p class="sub_label">Сайт увидит только тот, у кого есть
+								пароль</p>
+							<p id="ps_ac" class="password">
+								<label for="Ваш пароль">Ваш пароль</label>
+								<input type="password" placeholder="*****">
+							</p>
+							<p class="ower">
+								<input id="test3" name="radio-group" type="radio" checked>
+								<label for="test3">Приватный сайт</label>
+							</p>
+							<p class="sub_label">Только авторы и владелец
+								сайта смогут увидеть сайт</p>
+						</form>
+					</div>
+
+					<div class="btn">
+						<a id="btn_close" class="btn_close">Отменить</a>
+						<a id="btn_save" class="btn_save">Сохранить</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div id="footer" class="footer">
+		<div class="wr">
+			<p class="footer_text">Настройки доступа к сайту успешно изменены</p>
+			<span id="close_footer">&#10006;</span>
+		</div>
+	</div>
+
+
+	<script src="./assets/js/main.js"></script>
+</body>
+
+</html>

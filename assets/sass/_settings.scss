@@ -1,0 +1,161 @@
+$maw: 1200px;
+//Color
+$dark: #1c1e20;
+$grey: #818181;
+$blue: #4a1abb;
+$white: #ffffff;
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	min-height: 100%;
+	width: 100%;
+	background: #fafafa;
+	font-family: "Raleway", sans-serif;
+	position: relative;
+	overflow-x: hidden;
+}
+
+.modal-open {
+	padding-right: 0px !important;
+	overflow-y: scroll;
+}
+
+a {
+	text-decoration: none;
+}
+
+%flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+%ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.wr {
+	max-width: $maw;
+	margin: 0 auto;
+	position: relative;
+	padding: 0px 16px;
+}
+
+//media_mixin
+@mixin _8000 {
+	@media (max-width: 8000px) {
+		@content;
+	}
+}
+
+@mixin _1700 {
+	@media (max-width: 1700px) {
+		@content;
+	}
+}
+
+@mixin _1450 {
+	@media (max-width: 1450px) {
+		@content;
+	}
+}
+
+@mixin _1300 {
+	@media (max-width: 1300px) {
+		@content;
+	}
+}
+
+@mixin _1230 {
+	@media (max-width: 1230px) {
+		@content;
+	}
+}
+
+@mixin _1170 {
+	@media (max-width: 1170px) {
+		@content;
+	}
+}
+
+@mixin _1140 {
+	@media (max-width: 1140px) {
+		@content;
+	}
+}
+
+@mixin _1005 {
+	@media (max-width: 1005px) {
+		@content;
+	}
+}
+
+@mixin _979 {
+	@media (max-width: 979px) {
+		@content;
+	}
+}
+
+@mixin _880 {
+	@media (max-width: 880px) {
+		@content;
+	}
+}
+
+@mixin _830 {
+	@media (max-width: 830px) {
+		@content;
+	}
+}
+
+@mixin _730 {
+	@media (max-width: 730px) {
+		@content;
+	}
+}
+
+@mixin _650 {
+	@media (max-width: 650px) {
+		@content;
+	}
+}
+
+@mixin _580 {
+	@media (max-width: 580px) {
+		@content;
+	}
+}
+
+@mixin _480 {
+	@media (max-width: 480px) {
+		@content;
+	}
+}
+
+@mixin _425 {
+	@media (max-width: 425px) {
+		@content;
+	}
+}
+
+@mixin _390 {
+	@media (max-width: 390px) {
+		@content;
+	}
+}
+
+@mixin _350 {
+	@media (max-width: 350px) {
+		@content;
+	}
+}
+
+@mixin _330 {
+	@media (max-width: 330px) {
+		@content;
+	}
+}
